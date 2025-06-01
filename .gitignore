@@ -1,5 +1,6 @@
 # Python virtual environment
 venv/
+.venv
 env/
 ENV/
 
@@ -7,6 +8,8 @@ ENV/
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
+.Python
 
 # Distribution / packaging
 dist/
@@ -44,4 +47,14 @@ chroma_db/           # ChromaDB vector store directory
 
 # Temporary files
 tmp/
-temp/ 
+temp/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Python
+*.egg-info/
+.installed.cfg
+*.egg 
